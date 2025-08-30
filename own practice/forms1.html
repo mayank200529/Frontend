@@ -1,0 +1,241 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe, #8f00ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            width: 350px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc;
+            padding: 8px 5px;
+        }
+
+        .input-group i {
+            margin-right: 10px;
+            color: #999;
+        }
+
+        .input-group input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+
+        .forgot-password a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #4facfe, #8f00ff);
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .social-login a {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            background: #eee;
+            border-radius: 50%;
+            color: #333;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-login a:hover {
+            background: #ddd;
+        }
+
+        .signup {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .signup a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Type your username">
+    </div>
+
+    <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Type your password">
+    </div>
+
+    <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="login-btn">LOGIN</button>
+
+    <p>Or Sign Up Using</p>
+
+    <div class="social-login">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+    </div>
+
+    <div class="signup">
+        Or Sign Up Using<br>
+        <a href="#">SIGN UP</a>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/058dfb5dc5.js" crossorigin="anonymous"></script>    
+    <style>
+        *{box-sizing: border-box; }
+        body{background: linear-gradient(to right, #729ee5,#7675e6,#7675e6,#7675e6);}
+        .userstyle{width: 230px;}
+        .icons{text-align: center;  font-size: 30px;}
+        .i1{color: #1877F2;}
+        .i2{color: #7f241c; background: linear-gradient(#4285F4,#FBBC05,#34A853);}
+        .i3{color: #7f241c;}
+         </style>
+</head>
+<body>
+    <br><br><br>
+    <div class="container" style="background-color: white; width: 350px; border-radius: 5px; border: 1px solid rgb(226, 224, 224); display: flex; height: 600px; align-items: center; justify-content :center;">
+        <div class="p-2 " style="width: 400px;">
+            <div class="heading">
+                <h1 class="fw-bolder" style="text-align: center;" >LOGIN</h1>
+            </div>
+             <form action="" class="p-2">
+                    <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user "></span></i>
+                    <input id="uname" required type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock "></span></i>
+                    <input id="upass" required type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+                    </div>
+                    <br>                    
+                    <div class="p-2">
+                        <input type="button" onclick="check()" value="LOGIN" name="" class="form-control button btn" style="color:white; background: linear-gradient(#72c4df, #9c93e8, #b970ee, #e341f5);" required>
+                    </div>
+                    <br>
+                    <div style="text-align: center; font-size: 21;">
+                        or sign up using
+                    </div>
+                    <div class="p-2" style="visibility:hidden; align-content: center" id="winpx">
+                        <div class="alert alert-danger d-flex justify-content-center" id="winp"><span id="winp1" style="vertical-align: middle;">Wrong Input</span> 
+                            <div class="spinner-border" role="status">
+                               <span class="visually-hidden" style="vertical-align: middle;">Loading...</span>
+                            </div>
+                            </div>
+                    </div>
+                    <br>
+                    <div class="icons">
+                        <a href=""><i class="fa-brands p-1 i1 fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands p-1 i2 fa-google"></i></a>
+                        <a href=""><i class="fa-brands p-1 i3 fa-github"></i></a>                        
+                    </div>
+                </form> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function check (){
+        var un=document.getElementById("uname").value;
+        var pw=document.getElementById("upass").value;
+        if (un == "mayank12" && pw == "mayank1234"){
+            document.getElementById("winpx").style.visibility = "visible";
+            document.getElementById("winp").classList="alert alert-success";
+            document.getElementById("winp1").innerHTML="Succefully Login";
+            let counter = 0;
+            let interval = setInterval(() => {
+                counter++;
+                if (counter == 5) {
+                    clearInterval(interval);
+                    window.location.href = "https://www.google.com";
+                
+                }
+            },1000 );
+        }
+        else {
+            document.getElementById("winpx").style.visibility = "visible";
+        }
+
+    }
+</script>
