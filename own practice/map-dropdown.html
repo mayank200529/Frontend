@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP_DROPDOWN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/058dfb5dc5.js" crossorigin="anonymous"></script>    
+    <style>
+        *{ box-sizing: border-box; font-family: 'calibri';}
+        body{ background: linear-gradient(to right,#a4ac86,#656d4a,#414833,#333d29);}
+        .stysel{font-weight:bolder; width: 500px; color: #333d29; background:linear-gradient(#edf2f4,#a4ac86); height: 70px; font-size: 45px; }
+        .mapstyl{border: .1cm solid black; box-shadow: 2px 2px 2px #000000;}
+        .heading{font-size: 100px; text-align: center; color: #edf2f4; text-shadow: 5px 5px 5px rgb(0, 0, 0);}
+    </style>
+</head>
+<body>
+    <div class="container p-2 ">
+        <div>
+            <h1  class="heading fw-bolder">MAPS</h1>
+        </div>
+        <hr>
+        <div class="row p-3">
+            <div class="col-sm-6">
+                 <form action="" name="form1">
+                    <select name="city" id="city" class="stysel" onchange="fun()">
+                        <option value="None">Choose City</option>
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Alwar">Alwar</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Bundi">Bundi</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Udaipur">Udaipur</option>
+                    </select>
+                 </form>
+            </div>
+            <div class="col-sm-6">
+                <div class="display-1 text-danger" id="ocity">
+                    <iframe id="cityajmer" class="mapstyl"  width="600" height="450" ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function fun() {
+        var a = document.getElementById("city").value;
+        // document.getElementById("ocity").innerHTML = a;
+         if (a == "Ajmer"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114306.55154599012!2d74.47981640088702!3d26.45315861211157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396be6d8fcb7cd01%3A0xcbaf8f12eb8100ee!2sAjmer%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753099953966!5m2!1sen!2sin";
+        }
+        else if (a == "Alwar"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113192.13731445801!2d76.56397408283891!3d27.554617448518094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972998fa7e65df3%3A0x38cebba39ee426f2!2sAlwar%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753100987156!5m2!1sen!2sin";
+        }
+        else if (a == "Bikaner"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56353.60913661144!2d73.27834077386584!3d28.021401806723887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393fdd7bd90bbb89%3A0x4ce3121a7664816b!2sBikaner%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753101252980!5m2!1sen!2sin";
+        }
+        else if (a == "Bundi"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57649.12995881254!2d75.60561314946717!3d25.435902354582435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f094175926d85%3A0x1e95467b69b617f5!2sBundi%2C%20Rajasthan%20323001!5e0!3m2!1sen!2sin!4v1753101118992!5m2!1sen!2sin";
+        }
+        else if (a == "Jaipur"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227749.05321101635!2d75.62574595312087!3d26.885115144570598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753101322196!5m2!1sen!2sin";
+        }
+        else if (a == "Jodhpur"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114487.44785244051!2d72.94814153327465!3d26.27033588238809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c4eaa06ccb9%3A0x8114ea5b0ae1abb8!2sJodhpur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753101361325!5m2!1sen!2sin";
+        }
+        else if (a == "Kota"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115548.30165558633!2d75.76456319266855!3d25.173379989407792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b30c41bb44d%3A0x5f5c103200045588!2sKota%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753101403826!5m2!1sen!2sin";
+        }
+        else if (a == "Udaipur"){
+            document.getElementById("cityajmer").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116078.31354750245!2d73.62247032237697!3d24.60826376676111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1753101446241!5m2!1sen!2sin";
+        }
+    }
+</script>
+
+
+
